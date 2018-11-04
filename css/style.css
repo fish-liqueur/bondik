@@ -103,6 +103,19 @@ a:hover {
   text-decoration: none !important
 }
 
+.main__button, .main__button_mobile {
+  border-radius: 2px;
+  border: solid #fff;
+}
+
+.main__button_mobile {
+/* только три нижние кнопки на моб. экране */
+border: solid #ccc;
+position: absolute;
+width: 190px;
+height: 44px;
+}
+
 .main__button {
   /* position: absolute;
   z-index: 12; */
@@ -256,11 +269,6 @@ z-index: 1;
 top: 185px;
 text-transform: uppercase;
 color: #FFFFFF;
-}
-
-.main__button {
-  border-radius: 2px;
-  border: solid #fff;
 }
 
 .main__centered_element {
@@ -1203,12 +1211,7 @@ transform: rotate(10deg);
   top: calc(50% - 88px/2 + 2482px);
 }
 
-.main__button_mobile_buy {
-  left: 27.47%;
-  right: 27.2%;
-  top: 77.9%;
-  bottom: 21.62%;
-}
+
 
 .main__pros_h4 {
   height: 24px;
@@ -1294,6 +1297,14 @@ transform: rotate(10deg);
   top: 97.69%;
   bottom: 1.83%;
 }
+
+.main__button_mobile_buy {
+  left: 27.47%;
+  right: 27.2%;
+  top: 77.9%;
+  bottom: 21.62%;
+}
+
 
 /* only for mobile above */
 /* modal window below */
