@@ -492,14 +492,14 @@ margin-left: auto;
 position: absolute;
   left: 21.13%;
 top: 17.21%;
-bottom: 76.42%;transform: rotate(-10deg);
+;transform: rotate(-10deg);
 }
 
 .main__person-block_son {
 position: absolute;
 left: 36.78%;
 top: 30%;
-bottom: 76.42%;transform: rotate(10deg);
+;transform: rotate(10deg);
 }
 
 .main__person-block_dad {
@@ -1457,7 +1457,7 @@ transform: rotate(10deg);
   .main__oval11, .main__oval12, .main__oval13, .main__oval15, .main__img_phone,
   .main__img_headphones, .main__img_clamps, .main__img_car, .main__img_keys,
   .main__img_pine, .main__img_mag, .main__img_corn2, .main__img_clipboard,
-  .main__img_helicopter, .js-path_big, js-path_path_big {
+  .main__img_helicopter, .js-path_big, .js-path_path_big, .main__green-ball-small {
     display: none;
   }
 
@@ -1469,6 +1469,141 @@ transform: rotate(10deg);
     text-align: center;
     text-transform: uppercase;
   }
+
+.main__header_all {
+  margin-left: -34.13%;
+}
+
+..main__who-did-it_h1 {
+  top: 167px;
+}
+
+.main__green-ball_family {
+  margin-top: 184px;
+}
+
+.main__green-ball_family_person {
+  width: 113px;
+  height: 111px;
+}
+
+.main__green-ball {
+  width: 631px;
+height: 528px;
+margin-left: auto;
+    margin-right: auto;
+
+}
+
+.main__header_white-ball {
+  width: 432px;
+height: 432px;
+margin-left: auto;
+margin-right: auto;
+top: 440px;
+left: 13%;
+}
+
+.main__button_watch-the-beginning {
+  top: 275px;
+}
+
+.main__header_cornman {
+  margin-left: auto;
+margin-right: auto;
+width: 392px;
+height: 255px;
+top: 0;
+}
+
+.main__person-block {
+  transform: rotate(0deg);
+  width: 348.2px;
+}
+
+.main__person-block_person {
+  width: 350.62px;
+height: 385px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.main__person-block_white-flag {
+  top: 0;
+  width: 340px;
+height: 170px;
+}
+
+.main__person-block_white-flag_left, .main__person-block_white-flag_right {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__person-block_white-flag_mom {
+    background: url('../img/white_label_mama_mobile.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.main__person-block_white-flag_son {
+    background: url('../img/white_label_son_mobile.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.main__person-block_white-flag_dad {
+    background: url('../img/white_label_papa_mobile.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.main__person-block_white-flag_ded {
+    background: url('../img/white_label_ded_mobile.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.main__person-block_red-flag {
+  width: 300px;
+height: 68px;
+top: 0;
+left: 0;
+right: 0;
+margin-top: 10px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.main__person-block_red-flag_left, .main__person-block_red-flag_right {
+    background: url('../img/search_mama_mobile.png') 0 0 no-repeat;
+        background-size: auto auto;
+    background-size: 100%;
+
+}
+
+.main__person-block_button {
+margin: 10px auto 0;
+}
+
+.main__person-block_mom {
+  left: 3.47%;
+top: 14.8%;
+}
+
+.main__person-block_son {
+top: 29.06%;
+  left: 3.47%;
+}
+
+.main__person-block_dad {
+top: 41.46%;
+  left: 3.47%;
+}
+
+.main__person-block_ded {
+top: 57.44%;
+  left: 3.47%;
+}
+
+
+
+
 
 
 
