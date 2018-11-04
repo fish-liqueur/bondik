@@ -104,13 +104,13 @@ a:hover {
 }
 
 .main__button {
-  position: absolute;
-  z-index: 12;
+  /* position: absolute;
+  z-index: 12; */
   /* padding-left: 30px; */
 }
 
 .main__button_blue {
-  display: inline-block;
+  /* display: inline-block;
   background: linear-gradient(to bottom, #31aed1 0%, #1096bc 100%);
   border-radius: 2px;
   color: white !important;
@@ -127,11 +127,11 @@ a:hover {
   position: relative;
   cursor: pointer;
   outline: none;
-  width: 100%;
+  width: 100%; */
 }
 
 .main__button_blue::after {
-  content: '';
+  /* content: '';
   display: block;
   width: 100%;
   height: 38px;
@@ -149,16 +149,16 @@ a:hover {
   border-top: 2px solid #0a79a4;
   border-left: 2px solid #0e8bb3;
   box-sizing: border-box;
-  border-right: 2px solid #0e8bb3;
+  border-right: 2px solid #0e8bb3; */
 }
 
 .main__button_blue::before {
-  opacity: 0;
+  /* opacity: 0;
   background: #44c4e8;
   background: -webkit-linear-gradient(top, #44c4e8 0, #1a9fc4 99%);
   background: -webkit-gradient(linear, left top, left bottom, from(#44c4e8), color-stop(99%, #1a9fc4));
   background: linear-gradient(to bottom, #44c4e8 0, #1a9fc4 99%);
-  transition: all ease .3s
+  transition: all ease .3s */
 }
 
 .main__button_blue:hover {
@@ -234,86 +234,286 @@ a:hover {
   bottom: 0%;
 }
 
-.main__who-did-it {
-  color: #FFFFFF;
+
+
+
+
+.main__green-ball {
+position: relative;
+background: url('../img/oval3.svg') 0 100% no-repeat;
+background-size: 100%;
+width: 891px;
+height: 700px;
+margin-left: 12.34%;
+z-index: 1;
 }
 
 .main__who-did-it_h1 {
-  left: 23.65%;
-  right: 50.5%;
-  top: 1.8%;
-  bottom: 96.23%;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+top: 185px;
 }
 
-.main__who-did-it_mom {
-  /*  left: 21.41%;
-      right: 69.99%;
-      top: 4%;
-      bottom: 93.87%;*/
-  /*left: 21.41%;
-    right: 71.99%; 1,058832181203118
-    top: 4.33%; 1,066666666666667
-    bottom: 93.87%; 1,005355039091785    */
-  left: 21.41%;
-  right: 67.99%;
-  top: 3.75%;
-  bottom: 93.37%;
-  transform: rotate(-11deg);
+.main__button {
+  border-radius: 2px;
+  border: solid #fff;
+}
+
+.main__centered_element {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__green-ball_family {
+  z-index: 2;
+  top: 317px;
+  margin-top: 209px;
+  text-align: center;
+}
+
+.main__green-ball_family_person {
+  width: 156.78px;
+  height: 160.46px;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.main__green-ball_family_mom {
   background: url('../img/main__who-did-it_mom.png') 0 0 no-repeat;
-  z-index: 3;
+  transform: rotate(-11deg);
+  background-size: 100%;
+  z-index: 2;
 }
 
-.main__who-did-it_son {
-  /*  left: 27.77%;
-      right: 64.63%;
-      top: 4%;
-      bottom: 93.91%;*/
-  left: 27.77%;
-  right: 61.9833824142242%;
-  top: 4.021874999999999%;
-  bottom: 93.40978693938429%;
-  transform: rotate(-3deg);
+.main__green-ball_family_son {
   background: url('../img/main__who-did-it_son.png') 0 0 no-repeat;
+  transform: rotate(-3deg);
+  background-size: 100%;
+  z-index: 3;
+  margin-left: -45px;
+}
+
+.main__green-ball_family_dad {
+  background: url('../img/main__who-did-it_dad.png') 0 0 no-repeat;
+  transform: rotate(3deg);
+  background-size: 100%;
+  z-index: 2;
+  margin-left: -45px;
+}
+
+.main__green-ball_family_ded {
+  background: url('../img/main__who-did-it_ded.png') 0 0 no-repeat;
+  transform: rotate(6deg);
+  background-size: 100%;
+  z-index: 3;
+  margin-left: -45px;
+}
+
+.main__button_find-suspect {
+  width: 250px;
+  height: 44px;
+  margin-top: 25px;
+}
+
+.main__green-ball_arrow {
+background: url('../img/v.svg') 0 0 no-repeat;
+width: 16px;
+height: 16px;
+transform: rotate(-135deg);
+margin-top: 35px;
+border: none;
+}
+
+.main__green-ball-small {
+  background: url('../img/oval3.svg') 0 0 no-repeat;
+  background-size: 100%;
+  width: 115px;
+  height: 115px;
+  margin-left: 23.33%;
+  z-index: 2;
+  margin-top: -75px;
+}
+
+.main__header_white-ball {
+  position: relative;
+  background: url('../img/oval1.svg') 0 0 no-repeat;
+  background-size: 100%;
+  width: 587px;
+  height: 587px;
+  margin-left: 49.79%;
+  margin-top: -397px;
+  z-index: 0;
+}
+
+.main__button_watch-the-beginning {
+  border-color: #00f;
+  width: 210px;
+  height: 44px;
+position: relative;
+  z-index: 1;
+  top: 362px;
+}
+
+.main__header_cornman {
+  background: url('../img/cornman.png') 0 0 no-repeat;
+  position: relative;
+  background-size: 100%;
+  width: 900px;
+  height: 538px;
+  margin-left: 38%;
+  top: -800px;
   z-index: 4;
 }
 
-.main__who-did-it_dad {
-  left: 34.71%;
-  right: 54.48455479927768%;
-  top: 3.562499999999999%;
-  bottom: 93.49930755299886%;
-  transform: rotate(3deg);
-  background: url('../img/main__who-did-it_dad.png') 0 0 no-repeat;
-  z-index: 3;
+
+.main__person-block {
+  width: 792.44px;
+
 }
 
-.main__who-did-it_ded {
-  left: 42.33%;
-  right: 47.279%;
-  top: 3.749999999999999%;
-  bottom: 92%;
-  transform: rotate(6deg);
-  background: url('../img/main__who-did-it_ded.png') 0 0 no-repeat;
-  z-index: 3;
+.main__person-block_person {
+  position: relative;
+  width: 433.62px;
+  height: 520px;
+  /* top: -800px; */
+  z-index: 15;
 }
 
-.main__button_who-did-it {
-  left: 29.22%;
-  right: 57.76%;
-  top: 6.55%;
-  bottom: 92.91%;
-  z-index: 8;
+.main__person-block_person_right {
+  margin-left: auto;
 }
 
-.main__who-did-it_v {
-  left: 35.75%;
-  right: 63.42%;
-  top: 7.6%;
-  bottom: 92.2%;
-  transform: rotate(-135deg);
-  background: url('../img/v.svg') 0 0 no-repeat;
-  z-index: 8;
+.main__person-block_person_left {
+  margin-right: auto;
 }
+
+.main__person-block_person_mom {
+  background: url('../img/mom.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_person_son {
+  background: url('../img/son.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_person_dad {
+  background: url('../img/dad.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_person_ded {
+  background: url('../img/ded.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_white-flag {
+  position: relative;
+  width: 508.2px;
+  height: 178px;
+  top: -400px;
+  z-index: 11;
+}
+
+.main__person-block_white-flag_right {
+  margin-left: auto;
+
+}
+
+.main__person-block_white-flag_left {
+  margin-right: auto;
+}
+
+.main__person-block_white-flag_mom {
+  background: url('../img/white_label_mama.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_white-flag_son {
+  background: url('../img/white_lable_son.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_white-flag_dad {
+  background: url('../img/white_label_papa.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_white-flag_ded {
+  background: url('../img/white_label_ded.png') 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main__person-block_red-flag {
+  position: relative;
+  width: 450px;
+  height: 70px;
+  top: -430px;
+  z-index: 12;
+}
+
+.main__person-block_red-flag_left {
+  background: url('../img/rectangle-red-left.png') 0 0 no-repeat;
+  background-size: 100%;
+  margin-right: auto;
+  left: 30px;
+
+}
+
+.main__person-block_red-flag_right {
+  background: url('../img/rectangle-red-right.png') 0 0 no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  right: 30px;
+}
+
+.main__person-block_button {
+  width: 275px;
+  height: 44px;
+  margin-top: -390px;
+}
+
+.main__person-block_button_left {
+  margin-left: 50px;
+}
+
+.main__person-block_button_right {
+  margin-left: cacl(100% - 50px);
+  margin-right: 50px;
+
+margin-left: auto;
+}
+
+.main__person-block_mom {
+position: absolute;
+  left: 21.13%;
+top: 17.21%;
+bottom: 76.42%;transform: rotate(-10deg);
+}
+
+.main__person-block_son {
+position: absolute;
+left: 37.78%;
+top: 28.51%;
+bottom: 76.42%;transform: rotate(10deg);
+}
+
+.main__person-block_dad {
+position: absolute;
+left: 16.21%;
+top: 43.79%;
+bottom: 76.42%;transform: rotate(-10deg);
+}
+
+.main__person-block_ded {
+position: absolute;
+left: 38.82%;
+top: 57.18%;
+bottom: 76.42%;transform: rotate(10deg);
+}
+
 
 /* .main__who-did-it_p {
   font-family: MyriadPro;
