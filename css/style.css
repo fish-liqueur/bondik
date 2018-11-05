@@ -723,10 +723,10 @@ a:hover {
   /* position: absolute;
   top: 130px; */
   position: relative;
-  margin-top: -1341px;
+margin-top: -1461px;
   z-index: 1;
   opacity: 0.5;
-  left: 16%;
+  left: 14%;
 
 
 }
@@ -1700,7 +1700,8 @@ top: 12.47%;
   }
 
   .main__path {
-    left: -2.44%;
+  left: -6.44%;
+  margin-top: -1403px;
   }
 
   /* family members below */
