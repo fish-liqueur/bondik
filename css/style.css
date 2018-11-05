@@ -109,10 +109,10 @@ a:hover {
   position: relative;
 }
 
-.main__button, .main__button_mobile {
+/* .main__button, .main__button_mobile {
   border-radius: 2px;
   border: solid #fff;
-}
+} */
 
 .main__button_mobile {
   /* только три нижние кнопки на моб. экране */
@@ -248,7 +248,7 @@ a:hover {
 .know-more-black-btn {
   color: #000;
   border-radius: 2px;
-  height: 33px;
+  height: 40px;
   letter-spacing: .05em;
   border: 1px solid #000;
   -webkit-transition: all ease .3s;
@@ -256,7 +256,7 @@ a:hover {
   position: relative;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  margin-top: 11px;
+  /* margin-top: 11px; */
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -282,7 +282,7 @@ a:hover {
   top: -1px;
   opacity: 0;
   display: block;
-  width: 160px;
+  width: 100%;
   height: 36px;
   background: #44c4e8;
   background: -webkit-linear-gradient(top, #44c4e8 0, #1a9fc4 99%);
@@ -358,7 +358,7 @@ a:hover {
 .blue-btn:before {
   content: '';
   width: 100%;
-  height: 38px;
+  height: 100%;
   display: block;
   position: absolute;
   left: 0;
@@ -559,12 +559,13 @@ a:hover {
 }
 
 .main__button_watch-the-beginning {
-  border-color: #00f;
+  /* border-color: #00f; */
   width: 210px;
   height: 44px;
-  position: relative;
-  z-index: 1;
-  top: 362px;
+  position: absolute;
+  z-index: 10;
+  left: calc(50% + 170px);
+top: 700px;
 }
 
 .main__header_cornman {
@@ -659,7 +660,7 @@ a:hover {
   width: 450px;
   height: 70px;
   top: -430px;
-  z-index: 12;
+  z-index: 14;
 }
 
 .main__person-block_red-flag_left {
@@ -1059,7 +1060,7 @@ margin-top: -1461px;
   top: 25.81%;
   bottom: 60.59%;
   transform: rotate(45deg);
-  z-index: 11;
+  z-index: 7;
   background: url('../img/helicopter.png') 0 0 no-repeat;
 }
 
@@ -1192,6 +1193,7 @@ margin-top: -1461px;
   /* height: 100%;
   width: 27.18%; */
   margin-left: 3%;
+  top: -30px;
 }
 
 /* only for mobile below */
@@ -1303,9 +1305,7 @@ top: calc(50% - 88px/2 + 3012.4px);
 
 .main__button_mobile_all-recipies {
   left: 24.53%;
-  right: 24.8%;
-  top: 97.69%;
-  bottom: 1.83%;
+  top: 28.2%;
 }
 
 .main__button_mobile_buy {
