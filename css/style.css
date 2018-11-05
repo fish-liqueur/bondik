@@ -43,6 +43,8 @@ main {
   position: relative;
   overflow: hidden;
   max-width: 1980px;
+  margin-left: auto;
+margin-right: auto;
   /* display: block; */
 }
 
@@ -718,12 +720,14 @@ a:hover {
 }
 
 .main__path {
-  position: absolute;
-  top: 130px;
+  /* position: absolute;
+  top: 130px; */
+  position: relative;
+  margin-top: -1341px;
   z-index: 1;
   opacity: 0.5;
   left: 16%;
-    z-index: 1;
+
 
 }
 .main__button_gray {}
@@ -1572,6 +1576,10 @@ top: 12.47%;
   .main__info-box-container, .main__back_2 {
     display: none;
   }
+
+.js-path_small {
+  height: 4900px;
+}
 
   .main__header_all {
     margin-left: -240px;
