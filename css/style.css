@@ -41,7 +41,6 @@ body {
 
 main {
   position: relative;
-  height: 8203px;
   overflow: hidden;
   max-width: 1980px;
   /* display: block; */
@@ -103,17 +102,22 @@ a:hover {
   text-decoration: none !important
 }
 
+.main__height {
+  height: 8203px;
+  position: relative;
+}
+
 .main__button, .main__button_mobile {
   border-radius: 2px;
   border: solid #fff;
 }
 
 .main__button_mobile {
-/* только три нижние кнопки на моб. экране */
-border: solid #ccc;
-position: absolute;
-width: 190px;
-height: 44px;
+  /* только три нижние кнопки на моб. экране */
+  border: solid #ccc;
+  position: absolute;
+  width: 190px;
+  height: 44px;
 }
 
 .main__button {
@@ -212,13 +216,15 @@ height: 44px;
 
 .main__button_clipboard {
   position: relative;
+  width: 170px;
+  height: 44px;
+  border-color: #00f;
 }
 
-.main__button_clipboard>a {
+/* .main__button_clipboard>a {
   height: 100%;
   width: 100%;
-}
-
+} */
 .main__back {
   /* background: url('../img/back-mobile.svg') 0 0 no-repeat; */
   background: linear-gradient(0deg, #F7F8F9, #F7F8F9);
@@ -247,18 +253,14 @@ height: 44px;
   bottom: 0%;
 }
 
-
-
-
-
 .main__green-ball {
-position: relative;
-background: url('../img/oval3.svg') 0 100% no-repeat;
-background-size: 100%;
-width: 891px;
-height: 700px;
-margin-left: 12.34%;
-z-index: 1;
+  position: relative;
+  background: url('../img/oval3.svg') 0 100% no-repeat;
+  background-size: 100%;
+  width: 891px;
+  height: 700px;
+  margin-left: 12.34%;
+  z-index: 1;
 }
 
 .main__who-did-it_h1 {
@@ -266,9 +268,9 @@ z-index: 1;
   position: relative;
   z-index: 2;
   margin: auto;
-top: 185px;
-text-transform: uppercase;
-color: #FFFFFF;
+  top: 185px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .main__centered_element {
@@ -328,12 +330,12 @@ color: #FFFFFF;
 }
 
 .main__green-ball_arrow {
-background: url('../img/v.svg') 0 0 no-repeat;
-width: 16px;
-height: 16px;
-transform: rotate(-135deg);
-margin-top: 35px;
-border: none;
+  background: url('../img/v.svg') 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  transform: rotate(-135deg);
+  margin-top: 35px;
+  border: none;
 }
 
 .main__green-ball-small {
@@ -361,7 +363,7 @@ border: none;
   border-color: #00f;
   width: 210px;
   height: 44px;
-position: relative;
+  position: relative;
   z-index: 1;
   top: 362px;
 }
@@ -377,10 +379,8 @@ position: relative;
   z-index: 4;
 }
 
-
 .main__person-block {
   width: 792.44px;
-
 }
 
 .main__person-block_person {
@@ -429,7 +429,6 @@ position: relative;
 
 .main__person-block_white-flag_right {
   margin-left: auto;
-
 }
 
 .main__person-block_white-flag_left {
@@ -469,7 +468,6 @@ position: relative;
   background-size: 100%;
   margin-right: auto;
   left: 30px;
-
 }
 
 .main__person-block_red-flag_right {
@@ -492,38 +490,39 @@ position: relative;
 .main__person-block_button_right {
   margin-left: cacl(100% - 50px);
   margin-right: 50px;
-
-margin-left: auto;
+  margin-left: auto;
 }
 
 .main__person-block_mom {
-position: absolute;
+  position: absolute;
   left: 21.13%;
-top: 17.21%;
-;transform: rotate(-10deg);
+  top: 17.21%;
+  ;
+  transform: rotate(-10deg);
 }
 
 .main__person-block_son {
-position: absolute;
-left: 36.78%;
-top: 30%;
-;transform: rotate(10deg);
+  position: absolute;
+  left: 36.78%;
+  top: 30%;
+  ;
+  transform: rotate(10deg);
 }
 
 .main__person-block_dad {
-position: absolute;
-left: 16.21%;
-top: 43.79%;
-bottom: 76.42%;transform: rotate(-10deg);
+  position: absolute;
+  left: 16.21%;
+  top: 43.79%;
+  bottom: 76.42%;
+  transform: rotate(-10deg);
 }
 
 .main__person-block_ded {
-position: absolute;
-left: 38.82%;
-top: 57.18%;
-transform: rotate(10deg);
+  position: absolute;
+  left: 38.82%;
+  top: 57.18%;
+  transform: rotate(10deg);
 }
-
 
 /* .main__who-did-it_p {
   font-family: MyriadPro;
@@ -1144,7 +1143,7 @@ transform: rotate(10deg);
   right: 18.75%;
   top: 67.22%;
   bottom: 28.48%;
-  z-index: 2;
+  z-index: 1;
   background: url('../img/corn2.png') 0 0 no-repeat;
 }
 
@@ -1158,27 +1157,28 @@ transform: rotate(10deg);
 }
 
 .main__button_clipboard_buy {
-  height: 2.55%;
-  width: 14.1%;
+  /* height: 2.55%;
+  width: 14.1%; */
   margin: 30% auto auto 42.5%;
 }
 
 .main__img_clipboard_buttons-row {
   position: relative;
   margin: 73.5% auto auto 48.2%;
-  height: calc(5.3% - 44px);
+  /* height: calc(5.3% - 44px); */
+  height: 44px;
 }
 
 .main__button_clipboard_learn-more {
   display: inline-block;
-  height: 100%;
-  width: 30.5%;
+  /* height: 100%;
+  width: 30.5%; */
 }
 
 .main__button_clipboard_all-recipies {
   display: inline-block;
-  height: 100%;
-  width: 27.18%;
+  /* height: 100%;
+  width: 27.18%; */
   margin-left: 3%;
 }
 
@@ -1210,8 +1210,6 @@ transform: rotate(10deg);
   right: 9.07%;
   top: calc(50% - 88px/2 + 2482px);
 }
-
-
 
 .main__pros_h4 {
   height: 24px;
@@ -1304,7 +1302,6 @@ transform: rotate(10deg);
   top: 77.9%;
   bottom: 21.62%;
 }
-
 
 /* only for mobile above */
 /* modal window below */
@@ -1481,143 +1478,134 @@ transform: rotate(10deg);
     text-transform: uppercase;
   }
 
-.main__header_all {
-  margin-left: -34.13%;
-}
+  .main__header_all {
+    margin-left: -34.13%;
+  }
 
-..main__who-did-it_h1 {
-  top: 167px;
-}
+  ..main__who-did-it_h1 {
+    top: 167px;
+  }
 
-.main__green-ball_family {
-  margin-top: 184px;
-}
+  .main__green-ball_family {
+    margin-top: 184px;
+  }
 
-.main__green-ball_family_person {
-  width: 113px;
-  height: 111px;
-}
+  .main__green-ball_family_person {
+    width: 113px;
+    height: 111px;
+  }
 
-.main__green-ball {
-  width: 631px;
-height: 528px;
-margin-left: auto;
+  .main__green-ball {
+    width: 631px;
+    height: 528px;
+    margin-left: auto;
     margin-right: auto;
+  }
 
-}
+  .main__header_white-ball {
+    width: 432px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 440px;
+    left: 13%;
+  }
 
-.main__header_white-ball {
-  width: 432px;
-height: 432px;
-margin-left: auto;
-margin-right: auto;
-top: 440px;
-left: 13%;
-}
+  .main__button_watch-the-beginning {
+    top: 275px;
+  }
 
-.main__button_watch-the-beginning {
-  top: 275px;
-}
+  .main__header_cornman {
+    margin-left: auto;
+    margin-right: auto;
+    width: 392px;
+    height: 255px;
+    top: 0;
+  }
 
-.main__header_cornman {
-  margin-left: auto;
-margin-right: auto;
-width: 392px;
-height: 255px;
-top: 0;
-}
+  .main__person-block {
+    transform: rotate(0deg);
+    width: 348.2px;
+  }
 
-.main__person-block {
-  transform: rotate(0deg);
-  width: 348.2px;
-}
+  .main__person-block_person {
+    width: 350.62px;
+    height: 385px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.main__person-block_person {
-  width: 350.62px;
-height: 385px;
-margin-left: auto;
-margin-right: auto;
-}
+  .main__person-block_white-flag {
+    top: 0;
+    width: 340px;
+    height: 170px;
+  }
 
-.main__person-block_white-flag {
-  top: 0;
-  width: 340px;
-height: 170px;
-}
+  .main__person-block_white-flag_left, .main__person-block_white-flag_right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.main__person-block_white-flag_left, .main__person-block_white-flag_right {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main__person-block_white-flag_mom {
+  .main__person-block_white-flag_mom {
     background: url('../img/white_label_mama_mobile.png') 0 0 no-repeat;
     background-size: 100%;
-}
+  }
 
-.main__person-block_white-flag_son {
+  .main__person-block_white-flag_son {
     background: url('../img/white_label_son_mobile.png') 0 0 no-repeat;
     background-size: 100%;
-}
+  }
 
-.main__person-block_white-flag_dad {
+  .main__person-block_white-flag_dad {
     background: url('../img/white_label_papa_mobile.png') 0 0 no-repeat;
     background-size: 100%;
-}
+  }
 
-.main__person-block_white-flag_ded {
+  .main__person-block_white-flag_ded {
     background: url('../img/white_label_ded_mobile.png') 0 0 no-repeat;
     background-size: 100%;
-}
+  }
 
-.main__person-block_red-flag {
-  width: 300px;
-height: 68px;
-top: 0;
-left: 0;
-right: 0;
-margin-top: 10px;
-margin-right: auto;
-margin-left: auto;
-}
+  .main__person-block_red-flag {
+    width: 300px;
+    height: 68px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.main__person-block_red-flag_left, .main__person-block_red-flag_right {
+  .main__person-block_red-flag_left, .main__person-block_red-flag_right {
     background: url('../img/search_mama_mobile.png') 0 0 no-repeat;
-        background-size: auto auto;
+    background-size: auto auto;
     background-size: 100%;
+  }
 
-}
+  .main__person-block_button {
+    margin: 10px auto 0;
+  }
 
-.main__person-block_button {
-margin: 10px auto 0;
-}
+  .main__person-block_mom {
+    left: 3.47%;
+    top: 14.8%;
+  }
 
-.main__person-block_mom {
-  left: 3.47%;
-top: 14.8%;
-}
+  .main__person-block_son {
+    top: 29.06%;
+    left: 3.47%;
+  }
 
-.main__person-block_son {
-top: 29.06%;
-  left: 3.47%;
-}
+  .main__person-block_dad {
+    top: 41.46%;
+    left: 3.47%;
+  }
 
-.main__person-block_dad {
-top: 41.46%;
-  left: 3.47%;
-}
-
-.main__person-block_ded {
-top: 57.44%;
-  left: 3.47%;
-}
-
-
-
-
-
-
-
+  .main__person-block_ded {
+    top: 57.44%;
+    left: 3.47%;
+  }
 
   .main__oval2 {
     /* left: -13.6%;
@@ -1918,14 +1906,14 @@ top: 57.44%;
     display: none;
   }
 
-.main__header_all {
-  margin-left: -240px;
-}
+  .main__header_all {
+    margin-left: -240px;
+  }
 
-.main__header_cornman {
-  margin-left: 41%;
-top: -746px;
-}
+  .main__header_cornman {
+    margin-left: 41%;
+    top: -746px;
+  }
 
   .main__who-did-it_h1 {
     /* left: 5.41%;
@@ -1944,7 +1932,6 @@ top: -746px;
     text-transform: uppercase;
     color: #FFFFFF;
   }
-
 
   .main__oval2 {
     left: -5.55%;
@@ -2045,12 +2032,10 @@ top: -746px;
   }
 
   /* family members below */
-
-.main__person-block_ded {
-  left: 32.82%;
-top: 58.18%;
-}
-
+  .main__person-block_ded {
+    left: 32.82%;
+    top: 58.18%;
+  }
 
   /* family members above */
   .main__img_cornman {
@@ -2204,40 +2189,736 @@ top: 58.18%;
   }
 }
 
-@media (min-width: 376px) {
+@media (max-width: 560px) {
+  .main__img_clipboard {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) and (min-width: 376px) {
+  .main__white-block1 {
+    position: absolute;
+    background-color: #fff;
+    left: 0%;
+    right: 0%;
+    top: 70%;
+    bottom: 21%;
+  }
+
+  .main__white-block2 {
+    position: absolute;
+    background-color: #fff;
+    left: 0%;
+    right: 0%;
+    top: 85.4%;
+    bottom: 10%;
+  }
+
+  .main__secret-of-taste_img {
+    left: 12%;
+    right: 12%;
+    top: 70.68%;
+    bottom: 24.66%;
+  }
+
+  .main__secret-of-taste_h3 {
+    top: 75.2%;
+  }
+
+  .main__secret-of-taste_p {
+    top: calc(50% - 88px/2 + 2190px);
+  }
+
+  .main__button_mobile_buy {
+    left: 31.47%;
+    right: 22.47%;
+    top: 77.5%;
+  }
+
+  .main__pros_h4 {
+    top: calc(50% - 24px/2 + 2450px);
+  }
+
+  .main__pros_ul {
+    top: calc(50% - 150px/2 + 2557.4px);
+  }
+
+  .main__pros_img {
+    top: 82.5%;
+    bottom: 14.94%;
+  }
+
+  .main__recipie_p {
+    top: calc(50% - 88px/2 + 3064.4px);
+  }
+
+  .main__soup_img {
+    bottom: 8.05%;
+  }
+
+  .main__recipie_h4 {
+    top: 95.22%;
+  }
+}
+
+@media (min-width: 561px) {
 
   .main__secret-of-taste_img, .main__secret-of-taste_h3, .main__secret-of-taste_p,
   .main__pros_h4, .main__pros_ul, .main__pros_img, .main__recipie_h3,
   .main__recipie_p, .main__recipie_img, .main__recipie_h4,
   .main__recipie_separating-block, .main__recipie_img, .main__soup_img,
   .main__button_mobile_learn-more, .main__button_mobile_all-recipies,
-  .main__button_mobile_buy, js-path_mobile, .main__back_2, .main__back_3, js-path_small, js-path_path_small {
+  .main__button_mobile_buy {
     display: none
   }
-}
 
-@media (max-width: 1280px) {}
+  @media (min-width: 376px) {
+    .js-path_mobile, .main__back_2, .main__back_3, .js-path_small, .js-path_path_small {
+      display: none
+    }
+  }
 
-@media (min-width: 1920px) {}
+  @media (max-width: 1280px) {}
 
-/* @media (min-width: 1650px) and (max-width: 1865px) {
-  .main__oval3 {
-    top: 8.3%;
-    bottom: 90.1%;
+  @media (min-width: 1920px) {}
+
+  @media (max-width: 1600px) and (min-width: 1281px) {
+    main {
+      height: 7900px;
+    }
+
+    .main__person-block_ded, .main__person-block_son {
+      left: 33.82%;
+    }
+
+    .main__img_rod {
+      top: 57.74%;
+      bottom: 15.9%;
+    }
+
+    .main__img_clipboard {
+      top: 76.03%;
+    }
+
+    .main__button_clipboard_buy {
+      margin: 29% auto auto 42.5%;
+    }
+
+    .main__img_clipboard_buttons-row {
+      margin: 72.5% auto auto 48.2%;
+    }
+  }
+
+  @media (max-width: 1400px) and (min-width: 1281px) {
+    main {
+      height: 7650px;
+    }
+
+    .main__person-block_son {
+      left: 25.78%;
+    }
+
+    .main__img_ball {
+      left: 74.68%;
+    }
+
+    .main__img_corn2 {
+      left: 69.07%;
+      right: 12.75%;
+    }
+
+    .main__img_clipboard {
+      top: 74.03%;
+      bottom: 8.71%;
+      left: 16.81%;
+      right: 15.21%;
+    }
+  }
+
+  @media (max-width: 1400px) and (min-width: 376px) {
+    .main__img_ball {
+      left: 80%;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 376px) {
+    .main__img_helicopter {
+      top: 21.81%;
+      bottom: 59.2%;
+    }
+
+    .main__person-block_son {
+      left: 16.78%;
+    }
+
+    .main__person-block_dad {
+      left: 6.21%;
+    }
+
+    .main__person-block_ded {
+      left: 26.82%;
+    }
+  }
+
+  @media (max-width: 1000px) and (min-width: 376px) {
+    main {
+      height: 7600px;
+    }
+
+    .main__header_cornman {
+      width: 785px;
+      height: 472px;
+      margin-left: 50%;
+    }
+
+    .main__person-block_mom {
+      left: 11.13%;
+    }
+
+    .main__img_ball {
+      left: 87%;
+    }
+
+    .main__person-block_ded {
+      left: 16.82%;
+      top: 55.18%;
+    }
+
+    .main__img_rod {
+      top: 53.74%;
+      bottom: 19.9%;
+    }
+
+    .main__img_clipboard {
+      top: 73.03%;
+      bottom: 9.71%;
+    }
+
+    .main__button_clipboard_buy {
+      margin: 29% auto auto 42.5%;
+    }
+
+    .main__img_clipboard_buttons-row {
+      margin: 72.5% auto auto 48.2%;
+    }
+  }
+
+  @media (max-width: 800px) and (min-width: 376px) {
+    main {
+      height: 7250px;
+    }
+
+    .main__person-block_son, .main__person-block_dad {
+      left: -2.22%;
+    }
+
+    .main__person-block_ded {
+      left: 1.82%;
+    }
+
+    .main__img_controller {
+      left: 30.03%;
+      right: 15.53%;
+      top: 25.08%;
+      bottom: 70.26%;
+    }
+
+    .main__img_headphones {
+      left: 4.88%;
+      right: 37.74%;
+      top: 23.13%;
+      bottom: 57%;
+    }
+
+    .main__img_clipboard {
+      left: -6.54%;
+      right: -5.14%;
+      top: 71.03%;
+      bottom: 12.71%;
+    }
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1649px) {
-  .main__oval3 {
-    top: 7.4%;
-bottom: 85.1%;;
+@media (max-width: 700px) and (min-width: 376px) {
+  main {
+    height: 7050px;
   }
 
-  .main__path {
-    left: -6.25%;
-    right: -13.94%;
-    top: 6.04%;
-    bottom: 33.17%;
-    background: url('../img/path-1.svg') 50% 0 no-repeat;
+  .main__img_clipboard {
+    top: 70.03%;
+    bottom: 13.71%;
   }
-} */
+
+  .main__button_clipboard {
+    width: 145px;
+    height: 35px;
+  }
+
+  .main__oval7 {
+    display: none;
+  }
+
+  .main__oval8 {
+    top: 14.64%;
+  }
+
+  .main__header_cornman {
+    width: 659px;
+    height: 395px;
+    margin-left: 60%;
+  }
+
+  .main__person-block_mom {
+    left: 1%;
+  }
+
+  .main__img_ball {
+    top: 36.56%;
+    bottom: 59.25%;
+  }
+
+  .main__person-block {
+    width: 746.44px;
+  }
+
+  .main__img_controller {
+    left: 30.03%;
+    right: 15.53%;
+    top: 26.08%;
+    bottom: 69.26%;
+  }
+
+  .main__img_headphones {
+    left: 8.88%;
+    right: 34.74%;
+    top: 21.13%;
+    bottom: 62%;
+  }
+
+  .main__img_car {
+    left: 13.44%;
+    right: 42.39%;
+    top: 34.8%;
+    bottom: 56.12%;
+  }
+
+  .main__img_clamps {
+    left: 56.93%;
+    right: 23.96%;
+    top: 40.45%;
+    bottom: 57.84%;
+  }
+
+  .main__img_keys {
+    left: 42.27%;
+    right: 19.44%;
+    top: 43.52%;
+    bottom: 46.78%;
+  }
+
+  .main__img_flower2 {
+    left: 36.47%;
+    right: -14.27%;
+    top: 48.98%;
+    bottom: 39.75%;
+  }
+
+  .main__person-block {
+    width: 617.44px;
+  }
+
+  .main__person-block_person {
+    width: 300px;
+    height: 343px;
+  }
+
+  .main__person-block_white-flag {
+    width: 388.2px;
+    height: 172px;
+    top: -296px;
+  }
+
+  .main__person-block_red-flag {
+    width: 371px;
+    height: 99px;
+    top: -353px;
+  }
+
+  .main__person-block_button {
+    margin-top: -363px;
+  }
+}
+
+@media (max-width: 560px) and (min-width: 376px) {
+  main {
+    height: 8203px;
+  }
+
+  .main__img_clipboard {
+    top: 67.03%;
+    bottom: 15.71%;
+  }
+
+  .main__who-did-it_h1>h1 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-left: -100px;
+  }
+
+  .main__green-ball_family {
+    margin-left: -4%;
+  }
+
+  .main__green-ball_family_person {
+    width: 139.78px;
+  }
+
+  .main__button_watch-the-beginning {
+    margin-left: 20%;
+    top: 459px;
+  }
+
+  .main__header_cornman {
+    width: 349px;
+    height: 210px;
+    margin-left: 60%;
+    top: -341px;
+  }
+
+  .main__person-block {
+    width: 464.44px;
+  }
+
+  .main__person-block_person {
+    width: 231px;
+    height: 266px;
+  }
+
+  .main__person-block_white-flag {
+    width: 324.2px;
+    height: 139px;
+    top: -235px;
+  }
+
+  .main__person-block_red-flag {
+    width: 305px;
+    height: 76px;
+    top: -273px;
+  }
+
+  .main__person-block_button {
+    width: 200px;
+    margin-top: -297px;
+  }
+
+  .main__person-block_button_left {
+    margin-left: 20px;
+  }
+
+  .main__person-block_button_right {
+    margin-right: 20px;
+  }
+
+  .main__img_corn2 {
+    top: 64.22%;
+    bottom: 33.48%;
+  }
+
+  .main__img_headphones {
+    left: 28.88%;
+    right: -14.26%;
+    top: 19.5%;
+    bottom: 62%;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 376px) {
+  .main__green-ball_family {
+    margin-left: -12%;
+  }
+
+  .main__img_corn2 {
+    top: 63.22%;
+    bottom: 34.48%;
+  }
+
+  main {
+    /* height: 7200px; */
+  }
+
+  .main__img_clipboard {
+    top: 65.03%;
+    bottom: 24.71%;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 376px) {
+
+  .main__img_clipboard {
+    top: 65.03%;
+    bottom: 24.71%;
+  }
+
+  .main__who-did-it_h1>h1 {
+    margin-left: -150px;
+  }
+
+  .main__green-ball_family {
+    margin-left: -18%;
+  }
+
+  .main__header_cornman {
+    margin-left: 66%;
+  }
+
+  .main__person-block_dad {
+    left: -12.22%;
+  }
+
+  .main__person-block_son, .main__person-block_ded {
+    left: -7.22%;
+  }
+
+  .main__img_flower1 {
+    left: -18.95%;
+    right: 41.5%;
+    top: 13%;
+    bottom: 75.83%;
+  }
+
+  .main__img_corn3 {
+    left: 61.16%;
+    right: 23.93%;
+    top: 15.39%;
+    bottom: 83.75%;
+  }
+
+  .main__img_headphones {
+    left: 28.88%;
+    right: -14.26%;
+    top: 21.13%;
+    bottom: 62%;
+  }
+
+  .main__img_controller {
+    left: 30.03%;
+    right: 6.53%;
+    top: 27.08%;
+    bottom: 65.26%;
+  }
+
+  .main__img_car {
+    left: 11.44%;
+    right: 44.39%;
+    top: 33.8%;
+    bottom: 61.12%;
+  }
+
+  .main__img_ball {
+    top: 37.56%;
+    bottom: 55.25%;
+    left: 74%;
+  }
+
+  .main__img_clamps {
+    left: 19.93%;
+    right: 37.96%;
+    top: 41.45%;
+    bottom: 51.84%;
+  }
+
+  .main__img_keys {
+    left: 40.27%;
+    right: -9.56%;
+    top: 43.52%;
+    bottom: 48.78%;
+  }
+
+  .main__img_flower2 {
+    left: 25.47%;
+    right: -14.27%;
+    top: 49.98%;
+    bottom: 31.75%;
+  }
+
+  .main__img_pine {
+    left: 11.54%;
+    right: 63.08%;
+    top: 58.32%;
+    bottom: 37.76%;
+  }
+
+  .main__img_rod {
+    left: -31.92%;
+    right: -72.09%;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 376px) {
+  .main__person-block_mom {
+    left: -7%;
+  }
+
+  .main__person-block_ded {
+    left: -11.22%;
+  }
+}
+
+@media (max-width: 560px) and (min-width: 376px) {
+  .main__person-block_son {
+    left: 13.78%;
+    top: 29%;
+  }
+
+  .main__img_car {
+    left: 10.44%;
+    right: 47.39%;
+    top: 32.8%;
+    bottom: 61.12%;
+  }
+
+  .main__img_clamps {
+    left: 40.93%;
+    right: 39.96%;
+    top: 40.45%;
+    bottom: 57.84%;
+  }
+
+  .main__person-block_dad {
+    left: 7.21%;
+    top: 41.79%;
+  }
+
+  .main__img_keys {
+    left: 40.27%;
+    right: 19.44%;
+    top: 42.52%;
+    bottom: 50.78%;
+  }
+
+  .main__img_flower2 {
+    top: 46.98%;
+  }
+
+  .main__person-block_ded {
+    left: 10.82%;
+    top: 52.18%;
+  }
+
+  .main__img_mag {
+    left: -46.94%;
+    right: 62.41%;
+    top: 53.95%;
+    bottom: 32.67%;
+  }
+
+  .main__img_pine {
+    left: 10.54%;
+    right: 73.08%;
+    top: 54.32%;
+    bottom: 42.76%;
+  }
+
+  .main__img_rod {
+    left: -20.92%;
+    right: -86.09%;
+    top: 51.74%;
+    bottom: 25.9%;
+  }
+
+  .main__img_corn2 {
+    top: 56.22%;
+    bottom: 41.48%;
+  }
+
+  .main__white-block1 {
+    position: absolute;
+    background-color: #fff;
+    left: 0%;
+    right: 0%;
+    top: 64%;
+  bottom: 26.5%;
+  }
+
+  .main__white-block2 {
+    position: absolute;
+    background-color: #fff;
+    left: 0%;
+    right: 0%;
+    top: 85.4%;
+    bottom: 10%;
+  }
+
+  .main__secret-of-taste_img {
+    left: 12%;
+    right: 12%;
+    top: 64.68%;
+    bottom: 29.66%;
+  }
+
+  .main__secret-of-taste_h3 {
+    top: 69.7%;
+  }
+
+  .main__secret-of-taste_p {
+  top: calc(50% - 88px/2 + 1737px);
+  }
+
+  .main__button_mobile_buy {
+    left: 31.47%;
+    right: 22.47%;
+    top: 72.1%;
+  }
+
+  .main__pros_h4 {
+top: calc(50% - 24px/2 + 1989px);
+  }
+
+  .main__pros_ul {
+  top: calc(50% - 150px/2 + 2101.4px);
+  }
+
+  .main__pros_img {
+    top: 77.4%;
+    bottom: 14.94%;
+  }
+
+  .main__recipie_h3 {
+    left: 9.33%;
+    right: 9.07%;
+    top: 81%;
+    bottom: 13.43%;
+}
+
+  .main__recipie_p {
+top: calc(50% - 88px/2 + 2706.4px);
+  }
+
+  .main__soup_img {
+top: 83.93%;
+  }
+
+  .main__recipie_h4 {
+top: 91.22%;
+  }
+
+  .main__recipie_separating-block {
+    top: 92%;
+bottom: 7.9%;
+  }
+
+  .main__recipie_img {
+    top: 92.48%;
+bottom: 4.91%;
+  }
+
+  .main__button_mobile_learn-more {
+    top: 95.89%;
+  }
+
+  .main__button_mobile_all-recipies {
+    top: 96.69%;
+  }
+
+
+}
