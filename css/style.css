@@ -717,17 +717,15 @@ a:hover {
   stroke-width: 11;
 }
 
-/*.main__path {
-  left: 13.75%;
-  right: 14.06%;
-  top: 6.04%;
-  bottom: 33.17%;
-  background: url('../img/path-1.svg') 0 0 no-repeat;
-
-    z-index: 1;
+.main__path {
+  position: absolute;
+  top: 130px;
+  z-index: 1;
   opacity: 0.5;
+  left: 16%;
+    z-index: 1;
 
-}*/
+}
 .main__button_gray {}
 
 .main__bouncing_left {}
@@ -1301,7 +1299,7 @@ top: calc(50% - 88px/2 + 3012.4px);
     margin-left: -34.13%;
   }
 
-  ..main__who-did-it_h1 {
+  .main__who-did-it_h1 {
     top: 167px;
   }
 
@@ -1473,15 +1471,10 @@ top: calc(50% - 88px/2 + 3012.4px);
   }
 
   .main__path {
-    left: 0%;
-    right: 10.67%;
-    top: 4.7%;
-    bottom: 36.87%;
-    background: url('../img/path-2.svg') 0 0 no-repeat;
-    z-index: 1;
+margin-top: -400px;
   }
 
-  
+
   .main__button_watch-video {
     left: 22.13%;
     right: 21.87%;
@@ -1507,7 +1500,7 @@ top: calc(50% - 88px/2 + 3012.4px);
   .main__img_lupa {
     left: -2.32%;
     right: -93.75%;
-    top: 11.47%;
+top: 12.47%;
     bottom: 85.41%;
   }
 
@@ -1699,10 +1692,7 @@ top: calc(50% - 88px/2 + 3012.4px);
   }
 
   .main__path {
-    left: -3.44%;
-    right: -4.84%;
-    top: 0.05%;
-    bottom: 33.97%;
+    left: -2.44%;
   }
 
   /* family members below */
@@ -2039,6 +2029,10 @@ top: calc(50% - 88px/2 + 3012.4px);
       height: 7600px;
     }
 
+    .main__path {
+    left: -7%;
+}
+
     .main__header_cornman {
       width: 785px;
       height: 472px;
@@ -2082,6 +2076,10 @@ top: calc(50% - 88px/2 + 3012.4px);
       height: 7250px;
     }
 
+    .main__path {
+    left: -20%;
+}
+
     .main__person-block_son, .main__person-block_dad {
       left: -2.22%;
     }
@@ -2116,6 +2114,14 @@ top: calc(50% - 88px/2 + 3012.4px);
 @media (max-width: 700px) and (min-width: 376px) {
   main {
     height: 7050px;
+  }
+
+  .main__path {
+    left: -31%;
+  }
+
+  .js-path {
+    height: 4500px;
   }
 
   .main__img_clipboard {
@@ -2439,6 +2445,10 @@ top: calc(50% - 88px/2 + 3012.4px);
 }
 
 @media (max-width: 560px) and (min-width: 376px) {
+.main__oval15 {
+  display: none;
+}
+
   .main__person-block_son {
     left: 13.78%;
     top: 29%;
@@ -2519,7 +2529,7 @@ top: calc(50% - 88px/2 + 3012.4px);
     background-color: #fff;
     left: 0%;
     right: 0%;
-    top: 85.4%;
+    top: 80.4%%;
     bottom: 10%;
   }
 
