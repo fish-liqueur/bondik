@@ -253,6 +253,10 @@ a:hover {
   bottom: 0%;
 }
 
+.main__person-block {
+  z-index: 9;
+}
+
 .main__green-ball {
   position: relative;
   background: url('../img/oval3.svg') 0 100% no-repeat;
