@@ -522,9 +522,12 @@ a:hover {
 }
 
 .main__button_find-suspect {
+  position: absolute;
   width: 250px;
   height: 44px;
-  margin-top: 25px;
+  top: 550px;
+  left: calc(50% - 380px);
+  z-index: 5;
 }
 
 .main__green-ball_arrow {
