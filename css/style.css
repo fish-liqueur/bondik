@@ -223,6 +223,197 @@ a:hover {
   border-color: #00f;
 }
 
+
+
+
+.blue-btn:before,
+.know-more-black-btn:before {
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#44c4e8', endColorstr='#1a9fc4', GradientType=0)
+}
+
+.know-more-black-btn:before {
+  left: -1px;
+  content: ''
+}
+
+.know-more-black-btn {
+  -webkit-border-radius: 2px;
+  font-size: 14px;
+  font-family: MyriadPro-Semibold;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase
+}
+
+.know-more-black-btn {
+  color: #000;
+  border-radius: 2px;
+  height: 33px;
+  letter-spacing: .05em;
+  border: 1px solid #000;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-top: 11px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.know-more-black-btn:before {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  top: -1px;
+  opacity: 0;
+  display: block;
+  width: 160px;
+  height: 36px;
+  background: #44c4e8;
+  background: -webkit-linear-gradient(top, #44c4e8 0, #1a9fc4 99%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#44c4e8), color-stop(99%, #1a9fc4));
+  background: linear-gradient(to bottom, #44c4e8 0, #1a9fc4 99%);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  border-bottom: 2px solid #0e7faa;
+  z-index: 5
+}
+
+.know-more-black-btn:hover:before {
+  opacity: 1
+}
+
+.know-more-black-btn:focus:before {
+  opacity: 0
+}
+
+.know-more-black-btn:focus {
+  color: #36b8dc;
+  border-color: #36b8dc
+}
+
+.know-more-black-btn:hover {
+  border-color: transparent;
+  color: #fff!important
+}
+
+.know-more-black-btn span {
+  position: relative;
+  z-index: 10;
+  margin-top: 5px
+}
+
+.blue-btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: MyriadPro-Semibold;
+  text-transform: uppercase;
+  /* display: inline-block; */
+  background: #31aed1;
+  background: -webkit-linear-gradient(top, #31aed1 0, #1096bc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#31aed1), to(#1096bc));
+  background: linear-gradient(to bottom, #31aed1 0, #1096bc 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#31aed1', endColorstr='#1096bc', GradientType=0);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff!important;
+  height: 40px;
+  letter-spacing: .05em;
+  border: none;
+  border-bottom: 2px solid #0979a3;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0
+}
+
+.blue-btn:before,
+.know-more-black-btn:before {
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#44c4e8', endColorstr='#1a9fc4', GradientType=0)
+}
+
+.blue-btn span {
+  display: inline-block;
+  vertical-align: middle
+}
+
+.blue-btn:after,
+.blue-btn:before {
+  content: '';
+  width: 100%;
+  height: 38px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all ease .3s
+}
+
+.blue-btn:before {
+  opacity: 0;
+  background: #44c4e8;
+  background: -webkit-linear-gradient(top, #44c4e8 0, #1a9fc4 99%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#44c4e8), color-stop(99%, #1a9fc4));
+  background: linear-gradient(to bottom, #44c4e8 0, #1a9fc4 99%);
+  transition: all ease .3s
+}
+
+.blue-btn:hover:before {
+  opacity: 1
+}
+
+.blue-btn:hover {
+  color: #fff!important;
+  border-bottom: 2px solid #0e7faa
+}
+
+.blue-btn:after {
+  opacity: 0;
+  transition: all ease .3s;
+  background: #1096bc;
+  border-top: 2px solid #0a79a4;
+  border-left: 2px solid #0e8bb3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 2px solid #0e8bb3
+}
+
+
+.blue-btn:focus:after {
+  opacity: 1
+}
+
+.blue-btn:focus {
+  border-bottom: 2px solid #3dbadd
+}
+
+.blue-btn span {
+  position: relative;
+  z-index: 10;
+  margin: 14px 0 0;
+  padding: 0
+}
+
+
+
+
 /* .main__button_clipboard>a {
   height: 100%;
   width: 100%;
