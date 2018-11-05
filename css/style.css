@@ -343,6 +343,7 @@ a:hover {
 }
 
 .main__green-ball-small {
+  position: relative;
   background: url('../img/oval3.svg') 0 0 no-repeat;
   background-size: 100%;
   width: 115px;
