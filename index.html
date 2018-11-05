@@ -8,7 +8,9 @@
         <title></title>
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/animate.css" rel="stylesheet" type="text/css" />
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/popup.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -102,7 +104,7 @@
               </div>
               <div class="main__person-block_red-flag main__person-block_red-flag_left main__bouncing_left">
               </div>
-              <div class="main__person-block_button main__person-block_button_left main__button">
+              <div class="main__person-block_button main__person-block_button_left main__button js-that-is-mom">
                 <!-- TODO:move forward -->
                 <span>Вердикт - это мама</span>
               </div>
@@ -115,7 +117,7 @@
               </div>
               <div class="main__person-block_red-flag main__person-block_red-flag_right main__bouncing_left">
               </div>
-              <div class="main__person-block_button main__person-block_button_right main__button">
+              <div class="main__person-block_button main__person-block_button_right main__button js-that-is-son">
                 <!-- TODO:move forward -->
                 <span>Вердикт - это сын</span>
               </div>
@@ -128,7 +130,7 @@
               </div>
               <div class="main__person-block_red-flag main__person-block_red-flag_left main__bouncing_left">
               </div>
-              <div class="main__person-block_button main__person-block_button_left main__button">
+              <div class="main__person-block_button main__person-block_button_left main__button js-that-is-dad">
                 <!-- TODO:move forward -->
                 <span>Вердикт - это папа</span>
               </div>
@@ -141,7 +143,7 @@
               </div>
               <div class="main__person-block_red-flag main__person-block_red-flag_right main__bouncing_left">
               </div>
-              <div class="main__person-block_button main__person-block_button_right main__button">
+              <div class="main__person-block_button main__person-block_button_right main__button js-that-is-grandpa">
                 <!-- TODO:move forward -->
                 <span>Вердикт - это дедушка</span>
               </div>
@@ -231,38 +233,304 @@
             </div>
             </div>
 
-            <!-- only for mobile above -->
-            <!-- modal window below -->
-            <!-- <div id="" class="main__element main__modal">
-              <div class="main__element main__modal_background"></div>
-              <div class="main__element main__modal_cornman"></div>
-              <div class="main__element main__modal_cornman_background"></div>
-              <div class="main__element main__modal_genious_svg"></div>
-              <h2 class='main__element main__modal_h2'>Гениально! <br>Вы опытный детектив!</h2>
-              <p class='main__element main__modal_percentage'>47% детективов ответили так же, как и вы!</p>
-              <div class="main__element main__modal_separating-bar"></div>
-              <p class='main__element main__modal_percentage-total'>Мама 5%, Папа 29%, Дедушка 27%, Сын 40%</p>
-              <p class='main__element main__modal_all-guilty'>И это верно, но лишь
-                отчасти. Молодая кукуруза настолько вкусная, что <a href="#">к делу причастны абсолютно все подозреваемые</a></p>
-              <p class='main__element main__modal_share_medium-and-small'>Поделиться</p>
-              <div class="main__element main__modal_fb"></div>
-              <div class="main__element main__modal_vk"></div>
-              <div class="main__element main__modal_ok"></div>
-              <div class="main__element main__modal_arrow"></div>
-              <p class='main__element main__modal_share_big'>скорее поделись с друзьями</p>
-              <div class="main__element main__modal_close"></div>
-              <div class="main__element main__modal_shine"></div>
-            </div> -->
-            <!-- modal window above -->
+            <section>
+                <div class="popup__desktop-mom zoom-anim-dialog mfp-hide">
+                    <div class="popup__sun-wrapper">
+                        <div class="popup__sun animated rotateIn"></div>
+                    </div>
+                    <div class="popup__rules">
+                        <div class="rules__text">
+                            <span class="semibold">Годовой запас молодой кукурузы и сертификаты Озон ждут самых удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим результатом<br>с хештегом <span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>, получайте<br>новые улики и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим <span class="semibold">3 декабря</span><br>в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-right"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_mom.png" alt="">
+                        <div class="cloud__title txt-left">Гениально!<br>Вы опытный детектив!</div>
+                        <div class="cloud__subtitle txt-left">35% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__result">Мама 35%, Папа 28%, Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти. Молодая кукуруза<br>настолько вкусная, что <span>к делу причастны абсолютно<br>все подозреваемые</span></div>
+                        <a class="cloud__fb"></a>
+                        <a class="cloud__vk"></a>
+                        <a class="cloud__ok"></a>
+                        <img class="popup__share" src="img/popup/cloud_share.png" alt="">
+                    </div>
+                </div>
+
+                <div class="popup__desktop-son zoom-anim-dialog mfp-hide">
+                    <div class="popup__sun-wrapper">
+                        <div class="popup__sun animated rotateIn"></div>
+                    </div>
+                    <div class="popup__rules">
+                        <div class="rules__text">
+                            <span class="semibold">Годовой запас молодой кукурузы и сертификаты Озон ждут самых удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим результатом<br>с хештегом <span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>, получайте<br>новые улики и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим <span class="semibold">3 декабря</span><br>в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-right"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_son.png" alt="">
+                        <div class="cloud__title txt-left">Здорово!<br>Вы настоящий детектив!</div>
+                        <div class="cloud__subtitle txt-left">15% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__result">Мама 35%, Папа 28%, Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти. Молодая кукуруза<br>настолько вкусная, что <span>к делу причастны абсолютно<br>все подозреваемые</span></div>
+                        <a class="cloud__fb"></a>
+                        <a class="cloud__vk"></a>
+                        <a class="cloud__ok"></a>
+                        <img class="popup__share" src="img/popup/cloud_share.png" alt="">
+                    </div>
+                </div>
+
+                <div class="popup__desktop-dad zoom-anim-dialog mfp-hide">
+                    <div class="popup__sun-wrapper">
+                        <div class="popup__sun animated rotateIn"></div>
+                    </div>
+                    <div class="popup__rules">
+                        <div class="rules__text">
+                            <span class="semibold">Годовой запас молодой кукурузы и сертификаты Озон ждут самых удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим результатом<br>с хештегом <span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>, получайте<br>новые улики и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим <span class="semibold">3 декабря</span><br>в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-right"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_dad.png" alt="">
+                        <div class="cloud__title txt-left">В точку!<br>Вы наблюдательный детектив!</div>
+                        <div class="cloud__subtitle txt-left">28% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__result">Мама 35%, Папа 28%, Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти. Молодая кукуруза<br>настолько вкусная, что <span>к делу причастны абсолютно<br>все подозреваемые</span></div>
+                        <a class="cloud__fb"></a>
+                        <a class="cloud__vk"></a>
+                        <a class="cloud__ok"></a>
+                        <img class="popup__share" src="img/popup/cloud_share.png" alt="">
+                    </div>
+                </div>
+
+                <div class="popup__desktop-grandpa zoom-anim-dialog mfp-hide">
+                    <div class="popup__sun-wrapper">
+                        <div class="popup__sun animated rotateIn"></div>
+                    </div>
+                    <div class="popup__rules">
+                        <div class="rules__text">
+                            <span class="semibold">Годовой запас молодой кукурузы и сертификаты Озон ждут самых удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим результатом<br>с хештегом <span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>, получайте<br>новые улики и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим <span class="semibold">3 декабря</span><br>в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-right"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_grandpa.png" alt="">
+                        <div class="cloud__title txt-left">Поздравляем!<br>Вы проницательный детектив!</div>
+                        <div class="cloud__subtitle txt-left">22% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__result">Мама 35%, Папа 28%, Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти. Молодая кукуруза<br>настолько вкусная, что <span>к делу причастны абсолютно<br>все подозреваемые</span></div>
+                        <a class="cloud__fb"></a>
+                        <a class="cloud__vk"></a>
+                        <a class="cloud__ok"></a>
+                        <img class="popup__share" src="img/popup/cloud_share.png" alt="">
+                    </div>
+                </div>
+
+                <div class="popup__mobile-mom zoom-anim-dialog mfp-hide">
+                    <div class="popup__rules">
+                        <div class="rules__text txt-center">
+                            <span class="semibold">Годовой запас молодой кукурузы<br>и сертификаты Озон ждут самых<br>удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим<br>результатом с хештегом<br><span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>,<br>получайте новые улики<br>и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим<br><span class="semibold">3 декабря</span> в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-center"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_mom.png" alt="">
+                        <div class="cloud__title">Гениально!<br>Вы опытный<br>детектив!</div>
+                        <div class="cloud__subtitle">35% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__line"></div>
+                        <div class="cloud__result">Мама 35%, Папа 28%,<br>Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти.<br>Молодая кукуруза настолько<br>вкусная, что <span>к делу причастны<br>абсолютно все подозреваемые</span></div>
+                        <div class="popup__share-mobile">
+                            <div class="share-mobile__title">Скорее поделитесь с друзьями</div>
+                            <a class="cloud__fb"></a>
+                            <a class="cloud__vk"></a>
+                            <a class="cloud__ok"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup__mobile-son zoom-anim-dialog mfp-hide">
+                    <div class="popup__rules">
+                        <div class="rules__text txt-center">
+                            <span class="semibold">Годовой запас молодой кукурузы<br>и сертификаты Озон ждут самых<br>удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим<br>результатом с хештегом<br><span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>,<br>получайте новые улики<br>и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим<br><span class="semibold">3 декабря</span> в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-center"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_son.png" alt="">
+                        <div class="cloud__title">Здорово!<br>Вы настоящий<br>детектив!</div>
+                        <div class="cloud__subtitle">15% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__line"></div>
+                        <div class="cloud__result">Мама 35%, Папа 28%,<br>Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти.<br>Молодая кукуруза настолько<br>вкусная, что <span>к делу причастны<br>абсолютно все подозреваемые</span></div>
+                        <div class="popup__share-mobile">
+                            <div class="share-mobile__title">Скорее поделитесь с друзьями</div>
+                            <a class="cloud__fb"></a>
+                            <a class="cloud__vk"></a>
+                            <a class="cloud__ok"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup__mobile-dad zoom-anim-dialog mfp-hide">
+                    <div class="popup__rules">
+                        <div class="rules__text txt-center">
+                            <span class="semibold">Годовой запас молодой кукурузы<br>и сертификаты Озон ждут самых<br>удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим<br>результатом с хештегом<br><span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>,<br>получайте новые улики<br>и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим<br><span class="semibold">3 декабря</span> в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-center"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_dad.png" alt="">
+                        <div class="cloud__title">В точку!<br>Вы наблюдательный<br>детектив!</div>
+                        <div class="cloud__subtitle">28% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__line"></div>
+                        <div class="cloud__result">Мама 35%, Папа 28%,<br>Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти.<br>Молодая кукуруза настолько<br>вкусная, что <span>к делу причастны<br>абсолютно все подозреваемые</span></div>
+                        <div class="popup__share-mobile">
+                            <div class="share-mobile__title">Скорее поделитесь с друзьями</div>
+                            <a class="cloud__fb"></a>
+                            <a class="cloud__vk"></a>
+                            <a class="cloud__ok"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup__mobile-grandpa zoom-anim-dialog mfp-hide">
+                    <div class="popup__rules">
+                        <div class="rules__text txt-center">
+                            <span class="semibold">Годовой запас молодой кукурузы<br>и сертификаты Озон ждут самых<br>удачливых детективов!</span><br>
+                            Чтобы принять участие в розыгрыше:
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">1</div>
+                            <div class="paragraph__text">Поделитесь своим<br>результатом с хештегом<br><span class="semibold">#ктосъелмолодуюкукурузу</span><br>в социальных сетях.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">2</div>
+                            <div class="paragraph__text"><span class="semibold"><a class="rules__link" href="">Подпишитесь на рассылку</a></span>,<br>получайте новые улики<br>и выполняйте задания.</div>
+                        </div>
+                        <div class="rules__paragraph">
+                            <div class="paragraph__number">3</div>
+                            <div class="paragraph__text">Победителей объявим<br><span class="semibold">3 декабря</span> в рассылке!</div>
+                        </div>
+                        <div class="rules__text txt-center"><a class="rules__link" href="">Правила акции</a></div>
+                    </div>
+                    <div class="popup__cloud">
+                        <img class="cloud__bond" src="img/popup/bond_grandpa.png" alt="">
+                        <div class="cloud__title">Поздравляем!<br>Вы проницательный<br>детектив!</div>
+                        <div class="cloud__subtitle">22% детективов ответили<br>так же, как и вы!</div>
+                        <div class="cloud__line"></div>
+                        <div class="cloud__result">Мама 35%, Папа 28%,<br>Дедушка 22%, Сын 15%</div>
+                        <div class="cloud__text">И это верно, но лишь отчасти.<br>Молодая кукуруза настолько<br>вкусная, что <span>к делу причастны<br>абсолютно все подозреваемые</span></div>
+                        <div class="popup__share-mobile">
+                            <div class="share-mobile__title">Скорее поделитесь с друзьями</div>
+                            <a class="cloud__fb"></a>
+                            <a class="cloud__vk"></a>
+                            <a class="cloud__ok"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
             <script src="js/jquery.gsap.js" type="text/javascript"></script>
+            <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
             <script src="js/TweenMax.min.js" type="text/javascript"></script>
             <script src="js/ScrollMagic.js" type="text/javascript"></script>
             <script src="js/on-screen.umd.min.js" type="text/javascript"></script>
-
             <script src="js/animation.gsap.min.js" type="text/javascript"></script>
-
-
+            <script src="js/popup.js" type="text/javascript"></script>
             <script src="js/script.js" type="text/javascript"></script>
         </main>
     </body>

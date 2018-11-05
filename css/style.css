@@ -36,7 +36,7 @@ html, body {
 body {
   min-width: 320px;
   background-color: #fff;
-  /* object-fit: contain; */
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
@@ -496,7 +496,7 @@ a:hover {
 }
 
 .main__person-block_button_right {
-  margin-left: cacl(100% - 50px);
+  margin-left: calc(100% - 50px);
   margin-right: 50px;
   margin-left: auto;
 }
@@ -2537,7 +2537,7 @@ top: 12.47%;
     background-color: #fff;
     left: 0%;
     right: 0%;
-    top: 80.4%%;
+    top: 80.4%;
     bottom: 10%;
   }
 
