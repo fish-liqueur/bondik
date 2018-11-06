@@ -38,7 +38,7 @@ html, body {
 
 body {
   min-width: 320px;
-  background-color: #fff;
+  background-color: #F7F8F9;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -114,7 +114,7 @@ a:hover {
 .main__button_mobile {
   /* только три нижние кнопки на моб. экране */
   border: solid #ccc;
-  position: absolute;
+  /* position: absolute; */
   width: 190px;
   height: 44px;
 }
@@ -908,6 +908,7 @@ left: calc(12.34% + 318px);
   bottom: 1.71%;
   transform: rotate(-6deg);
   background: url('../img/clipboard.png') 0 0 no-repeat;
+  z-index: 5;
 }
 
 .main__button_clipboard_buy {
@@ -930,18 +931,42 @@ left: calc(12.34% + 318px);
 }
 
 /* only for mobile below */
+
+
+
+
+/* only for mobile above */
+
+.main__podval {
+  position: absolute;
+  top: 71%;
+}
+
+.main__podval_white-block1, .main__podval_white-block2, .main__podval_gray-block1,
+.main__podval_gray-block2 {
+  width: 100%;
+    padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main__podval_white-block1, .main__podval_white-block2, .main__podval_gray-block1,
+.main__podval_gray-block2 {
+position: relative;
+}
+
+.main__podval_white-block1, .main__podval_white-block2 {
+  background: #fff;
+}
 .main__secret-of-taste_img {
   background: url('../img/tin.png') 0 0 no-repeat;
-  left: -2.67%;
-  right: 2%;
-  top: 71.58%;
-  bottom: 24.66%;
+  background-size: 100%;
+margin: 10px auto;
+height: 350px;
+width: 363px;
 }
 
 .main__secret-of-taste_h3 {
-  left: 9.33%;
-  right: 9.07%;
-  top: 75.2%;
+margin: 0 auto;
 }
 
 .main__secret-of-taste_p {
@@ -951,39 +976,24 @@ left: calc(12.34% + 318px);
   text-align: center;
   letter-spacing: 0.16px;
   color: #050505;
-  height: 88px;
-  left: 9.33%;
-  right: 9.07%;
-  top: calc(50% - 88px/2 + 2193px);
+margin: auto 15px;
 }
 
-.main__pros_h4 {
-  height: 24px;
-  left: 12.8%;
-  right: 35.4%;
-  top: calc(50% - 24px/2 + 2404px);
-  ;
+.main__pros_h4, .main__recipie_h4 {
+margin: 15px auto auto 40px;
 }
 
 .main__pros_ul {
-  height: 150px;
-  left: 9.87%;
-  right: 12.13%;
-  top: calc(50% - 150px/2 + 2508.4px);
+
 }
 
 .main__pros_img {
-  left: 7.47%;
-  right: 7.47%;
-  top: 82.05%;
-  bottom: 15.94%;
+margin: 10px auto auto;
 }
 
 .main__recipie_h3 {
-  left: 9.33%;
-  right: 9.07%;
-  top: 84.5%;
-  bottom: 13.43%;
+margin-left: 15px;
+margin-right: 15px;
 }
 
 .main__recipie_p {
@@ -992,64 +1002,46 @@ left: calc(12.34% + 318px);
   font-size: 16px;
   letter-spacing: 0.16px;
   color: #191919;
-  height: 88px;
-  left: 12.53%;
-  right: 12.27%;
-  top: calc(50% - 88px/2 + 3012.4px);
+margin: auto 15px 20px;
 }
 
 .main__soup_img {
-  left: 0%;
-  right: 0%;
-  top: 87.93%;
-  bottom: 8.05%;
+
   width: 100%;
 }
 
 .main__recipie_h4 {
-  left: 9.87%;
-  right: 5.87%;
-  top: 92.22%;
-  bottom: 7.26%;
+
 }
 
 .main__recipie_separating-block {
-  left: 10.13%;
-  right: 79.2%;
-  top: 93.18%;
-  bottom: 6.73%;
+  height: 8px;
+  width: 40px;
+  margin: 10px auto 10px 40px;
   background-color: #58B753;
 }
 
 .main__recipie_img {
   background: url('../img/recipie.png') 0 0 no-repeat;
-  left: 9.87%;
-  right: 10.67%;
-  top: 93.48%;
-  bottom: 3.91%;
+  background-size: 100%;
+  height: 255px;
+  width: 63%;
+  max-width: 300px;
+  margin-left: 40px;
 }
 
-.main__button_mobile_learn-more {
-  left: calc(50% - 95px);
-  right: auto;
-  top: 96.89%;
-  bottom: auto;
-}
-
-.main__button_mobile_all-recipies {
-  left: calc(50% - 95px);
-  top: 97.8%;
-}
-
-.main__button_mobile_buy {
-  left: calc(50% - 95px);
-  right: auto;
-  top: 77.9%;
-  bottom: auto;
+.main__button_mobile_buy, .main__button_mobile_learn-more, .main__button_mobile_all-recipies {
   z-index: 15;
+  margin: 10px auto;
 }
 
-/* only for mobile above */
+
+
+
+
+
+
+
 /* modal window below */
 .main__modal {}
 
@@ -1202,16 +1194,21 @@ left: calc(12.34% + 318px);
 }
 
 /* modal window above */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   main {
-    height: 8190px;
+    height: 8090px;
   }
+
+  .main__podval {
+    top: 71%;
+}
 
   .main__oval1, .main__oval3, .main__oval5, .main__oval6, .main__oval7,
   .main__oval11, .main__oval12, .main__oval13, .main__oval15, .main__img_phone,
   .main__img_headphones, .main__img_clamps, .main__img_car, .main__img_keys,
   .main__img_pine, .main__img_mag, .main__img_corn2, .main__img_clipboard,
-  .main__img_helicopter, .js-path_big, .js-path_path_big, .main__green-ball-small {
+  .main__img_helicopter, .js-path_big, .js-path_path_big, .main__green-ball-small,
+  .main__img_corn3   {
     display: none;
   }
 
@@ -1225,20 +1222,20 @@ left: calc(12.34% + 318px);
   }
 
   .main__header_all {
-    margin-left: -34.13%;
+/* margin-left: calc(50% - 390px); */
+margin-left: calc(50% - 315px);
   }
 
   .main__who-did-it_h1 {
-    top: 167px;
+    top: 131px;
   }
 
   .main__green-ball_family {
-    margin-top: 184px;
+    margin-top: 154px;
   }
 
   .main__green-ball_family_person {
-    width: 113px;
-    height: 111px;
+width: 122px;
   }
 
   .main__green-ball {
@@ -1253,8 +1250,9 @@ left: calc(12.34% + 318px);
     height: 432px;
     margin-left: auto;
     margin-right: auto;
-    top: 440px;
-    left: 13%;
+    top: 959px;
+    left: calc(50% - 216px);
+    position: absolute;
   }
 
   .main__header_cornman {
@@ -1262,17 +1260,18 @@ left: calc(12.34% + 318px);
     margin-right: auto;
     width: 392px;
     height: 255px;
-    top: 0;
+    top: 50px;
   }
 
   .main__person-block {
     transform: rotate(0deg);
-    width: 348.2px;
+    width: calc(100% - 20px);
+    left: 10px;
   }
 
   .main__person-block_person {
-    width: 350.62px;
-    height: 385px;
+width: 100%;
+    height: 470px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1281,6 +1280,7 @@ left: calc(12.34% + 318px);
     top: 0;
     width: 340px;
     height: 170px;
+    /* margin-top: 10px; */
   }
 
   .main__person-block_white-flag_left, .main__person-block_white-flag_right {
@@ -1330,23 +1330,19 @@ left: calc(12.34% + 318px);
   }
 
   .main__person-block_mom {
-    left: 3.47%;
     top: 14.8%;
   }
 
   .main__person-block_son {
-    top: 29.06%;
-    left: 3.47%;
+    top: 28.5%;
   }
 
   .main__person-block_dad {
     top: 41.46%;
-    left: 3.47%;
   }
 
   .main__person-block_ded {
-    top: 57.44%;
-    left: 3.47%;
+    top: 56.44%;
   }
 
   .main__oval2 {
@@ -1453,8 +1449,8 @@ left: calc(12.34% + 318px);
   .main__back_1 {
     left: 0%;
     right: 0%;
-    top: 0.42%;
-    bottom: 28.94%;
+    top: 0.0%;
+    bottom: 0%;
   }
 
   .main__button_buy {
@@ -1482,11 +1478,11 @@ left: calc(12.34% + 318px);
   }
 
   .main__green-ball_arrow {
-    margin-top: 115px;
+    margin-top: 95px;
   }
 
   .main__button_find-suspect {
-    top: 400px;
+    top: 365px;
     left: calc(50% - 125px);
   }
 
@@ -1550,7 +1546,7 @@ left: calc(12.34% + 318px);
   color: #fff;
 }
 
-@media (min-width: 376px) and (max-width: 1280px) {
+@media (min-width: 426px) and (max-width: 1280px) {
 
   .main__oval1, .main__oval6, .main__oval16, .main__img_phone,
   .main__info-box-container, .main__back_2 {
@@ -1849,7 +1845,7 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (max-width: 560px) and (min-width: 376px) {
+@media (max-width: 560px) and (min-width: 426px) {
   .main__white-block1 {
     position: absolute;
     background-color: #fff;
@@ -1915,7 +1911,7 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (min-width: 561px) {
+@media (min-width: 901px) {
 
   .main__secret-of-taste_img, .main__secret-of-taste_h3, .main__secret-of-taste_p,
   .main__pros_h4, .main__pros_ul, .main__pros_img, .main__recipie_h3,
@@ -1984,13 +1980,13 @@ left: calc(12.34% + 318px);
     }
   }
 
-  @media (max-width: 1400px) and (min-width: 376px) {
+  @media (max-width: 1400px) and (min-width: 426px) {
     .main__img_ball {
       left: 80%;
     }
   }
 
-  @media (max-width: 1200px) and (min-width: 376px) {
+  @media (max-width: 1200px) and (min-width: 426px) {
     .main__img_helicopter {
       top: 21.81%;
       bottom: 59.2%;
@@ -2009,7 +2005,7 @@ left: calc(12.34% + 318px);
     }
   }
 
-  @media (max-width: 1000px) and (min-width: 376px) {
+  @media (max-width: 1000px) and (min-width: 426px) {
     main {
       height: 7600px;
     }
@@ -2056,7 +2052,7 @@ left: calc(12.34% + 318px);
     }
   }
 
-  @media (max-width: 800px) and (min-width: 376px) {
+  @media (max-width: 800px) and (min-width: 426px) {
     main {
       height: 7250px;
     }
@@ -2096,10 +2092,10 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (max-width: 700px) and (min-width: 376px) {
-  main {
+@media (max-width: 700px) and (min-width: 426px) {
+  /* main {
     height: 7050px;
-  }
+  } */
 
   .main__path {
     left: -31%;
@@ -2185,7 +2181,8 @@ left: calc(12.34% + 318px);
     left: 36.47%;
     right: -14.27%;
     top: 48.98%;
-    bottom: 39.75%;
+  bottom: 45.75%;
+  z-index: 14;
   }
 
   .main__person-block {
@@ -2214,10 +2211,14 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (max-width: 560px) and (min-width: 376px) {
+@media (max-width: 560px) and (min-width: 426px) {
   main {
-    height: 8203px;
+    height: 7700px;
   }
+
+.main__podval {
+  top: 65%;
+}
 
   .main__img_clipboard {
     top: 67.03%;
@@ -2302,7 +2303,7 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (max-width: 500px) and (min-width: 376px) {
+@media (max-width: 500px) and (min-width: 426px) {
   .main__green-ball_family {
     margin-left: -12%;
   }
@@ -2318,7 +2319,7 @@ left: calc(12.34% + 318px);
   }
 }
 
-@media (max-width: 420px) and (min-width: 376px) {
+/* @media (max-width: 420px) and (min-width: 376px) {
   .main__img_clipboard {
     top: 65.03%;
     bottom: 24.71%;
@@ -2432,9 +2433,9 @@ left: calc(12.34% + 318px);
   .main__person-block_ded {
     left: -11.22%;
   }
-}
+} */
 
-@media (max-width: 560px) and (min-width: 376px) {
+@media (max-width: 560px) and (min-width: 426px) {
 
 .js-path_small {
   height: 3800px;
@@ -2619,8 +2620,169 @@ left: calc(50% - 95px);
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 426px) {
    .main__back_2, .main__back_3 {
     display: none
   }
+}
+
+/* @media (min-width: 376px) (max-width: 415px){
+.main__green-ball_family_person {
+  width: 125.78px;
+} */
+@media (max-width: 400px) {
+  .main__person-block_person {
+    height: 433px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main__secret-of-taste_img {
+    width: 335px;
+  }
+.main__secret-of-taste_p, .main__recipie_p {
+  font-size: 14px;
+}
+
+.main__person-block_son {
+    top: 28%;
+}
+}
+
+@media (max-width: 375px) {
+.main__green-ball_family_person {
+  width: 111px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main__person-block_person {
+  height: 397px;
+}
+
+}
+
+@media (max-width: 360px) {
+
+.main__person-block_white-flag {
+  width: 90%;
+height: 154px;
+}
+.main__person-block_person {
+  height: 380px;
+}
+
+}
+
+
+@media (max-width: 340px) {
+.main__green-ball_family_person {
+width: 105px;
+}
+
+.main__person-block_white-flag {
+height: 147px;
+}
+.main__person-block_person {
+  height: 358px;
+}
+
+}
+
+@media (max-width: 500px) and (min-width: 426px) {
+  .main__person-block_ded, .main__person-block_son {
+    left: 2.82%;
+}
+
+.main__person-block_dad, .main__person-block_mom {
+  left: 0.21%;
+}
+}
+
+@media (max-width: 468px) and (min-width: 426px) {
+  .main__green-ball_family_person {
+    width: 126.78px;
+}
+
+.main__green-ball_family {
+    margin-left: -16%;
+}
+
+}
+
+@media (max-width: 1480px) and (min-width: 1401px) {
+  .main__img_clipboard {
+    left: 15.81%;
+right: 7.21%;
+  }
+}
+
+@media (max-width: 1330px) and (min-width: 1281px) {
+  .main__img_clipboard {
+    left: 13.81%;
+    right: 8.21%;
+  }
+}
+
+@media (min-width: 901px) {
+  .main__podval {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 561px) {
+main {
+  height: 8150px;
+}
+
+  .main__img_clipboard {
+    display: none;
+  }
+.main__podval {
+  top: 71%;
+  z-index: 5;
+}
+
+.main__soup_img {
+  max-width: 561px;
+margin: auto;
+}
+
+.main__person-block_ded, .main__person-block_son {
+  left: 2.82%;
+}
+
+.main__person-block_dad, .main__person-block_mom {
+  left: -2.79%;
+}
+
+
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .main__secret-of-taste_p, .main__recipie_p {
+    margin: auto 15%;
+  }
+  .main__pros_h4, .main__recipie_h4 {
+      margin: 15px auto auto 15%;
+  }
+
+.main__pros_ul {
+  margin-left: 11%;
+}
+
+.main__recipie_p {
+  margin-bottom: 20px;
+}
+
+.main__recipie_separating-block {
+  margin: 10px auto 10px 15%;
+}
+
+.main__recipie_img {
+  margin-left: 15%;
+}
+
 }

@@ -14,4 +14,5 @@ function scrollFunction() {
     var draw = length * scrollpercent;
     myline[size].style.strokeDashoffset = length - draw;
     endPoint = myline[size].getPointAtLength(draw);
+    offsetMe();
 }
