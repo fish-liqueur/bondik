@@ -265,8 +265,9 @@ a:hover {
   height: 44px;
   /* top: 550px;
   left: calc(50% - 380px); */
+  /* left: calc(50% - 410px); */
   top: 510px;
-left: calc(50% - 410px);
+  left: 28.7%;
   z-index: 10;
 }
 
@@ -306,7 +307,8 @@ left: calc(50% - 410px);
   height: 44px;
   position: absolute;
   z-index: 10;
-  left: calc(50% + 170px);
+  /* left: calc(50% + 170px); */
+  left: 59.5%;
   top: 700px;
 }
 
