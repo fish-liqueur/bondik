@@ -263,8 +263,10 @@ a:hover {
   position: absolute;
   width: 250px;
   height: 44px;
-  top: 550px;
-  left: calc(50% - 380px);
+  /* top: 550px;
+  left: calc(50% - 380px); */
+  top: 510px;
+left: calc(50% - 410px);
   z-index: 10;
 }
 
@@ -273,7 +275,7 @@ a:hover {
   width: 16px;
   height: 16px;
   transform: rotate(-135deg);
-  margin-top: 35px;
+  margin-top: 110px;
   border: none;
 }
 
