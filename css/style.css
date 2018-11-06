@@ -31,6 +31,9 @@
 html, body {
   width: 100%;
   margin: 0;
+  max-width: 1980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -1853,11 +1856,6 @@ a:hover {
     display: none
   }
 
-  @media (min-width: 376px) {
-    .js-path_mobile, .main__back_2, .main__back_3, .js-path_small, .js-path_path_small {
-      display: none
-    }
-  }
 
   @media (max-width: 1280px) {}
 
@@ -2567,5 +2565,11 @@ a:hover {
   .main__path {
     margin-top: -523px;
     left: 14%;
+  }
+}
+
+@media (min-width: 376px) {
+  .js-path_mobile, .main__back_2, .main__back_3, .js-path_small, .js-path_path_small {
+    display: none
   }
 }
