@@ -20,6 +20,58 @@ if (!isIE && !isEdge) {
 }
 
 $(document).ready(function () {
+    var windowHeight = $(window).height();
+
+    $(document).on('scroll', function() {
+        $('.main__person-block_person').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height()/2 - windowHeight/2;
+            if ($(document).scrollTop() >= height) {
+                self.addClass('swing');
+            }
+        });
+    });
+
+    $(document).on('scroll', function() {
+        $('.main__img_controller').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height();
+            if ($(document).scrollTop() + windowHeight >= height) {
+                self.addClass('jackInTheBox')
+            }
+        });
+    });
+
+    $(document).on('scroll', function() {
+        $('.main__img_car').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height();
+            if ($(document).scrollTop() + windowHeight >= height) {
+                self.addClass('zoomInRight')
+            }
+        });
+    });
+
+    $(document).on('scroll', function() {
+        $('.main__img_flower2').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height()/2 - windowHeight/2;
+            if ($(document).scrollTop() + windowHeight >= height) {
+                self.addClass('slideInDown')
+            }
+        });
+    });
+
+    $(document).on('scroll', function() {
+        $('.main__img_pine').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height();
+            if ($(document).scrollTop() + windowHeight >= height) {
+                self.addClass('slideInDown')
+            }
+        });
+    });
+
     $('.js-that-is-mom').on('click', function () {
         if ($(window).width() >= 1280) {
             $.magnificPopup.open({
